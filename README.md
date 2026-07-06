@@ -12,4 +12,6 @@ This project is part of my Web Development Internship at SkillCraft Technology.
 - JavaScript
 
 ## Status
-✅ Day 1 Completed
+✅ Day 1Completed
+- Project Setup
+- Interactive Navigation with JavaScript
