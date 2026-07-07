@@ -1,12 +1,16 @@
 // Select Elements
+
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 const navbar = document.getElementById("navbar");
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector("nav ul");
 
-// Navbar Scroll Effect
+// Scroll Events
+
 window.addEventListener("scroll", function () {
+
+    // Navbar Scroll Effect
 
     if (window.scrollY > 50) {
         navbar.classList.add("scrolled");
@@ -14,10 +18,7 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("scrolled");
     }
 
-});
-
-// Active Navigation Highlight
-window.addEventListener("scroll", function () {
+    // Active Navigation Highlight
 
     let currentSection = "";
 
@@ -50,19 +51,21 @@ window.addEventListener("scroll", function () {
 });
 
 // Hamburger Menu
-menuToggle.addEventListener("click", function () {
+
+menuToggle.addEventListener("click", function(){
 
     navMenu.classList.toggle("active");
 
-    if (navMenu.classList.contains("active")) {
+    if(navMenu.classList.contains("active")){
         menuToggle.textContent = "✖";
-    } else {
+    }else{
         menuToggle.textContent = "☰";
     }
 
 });
 
 // Close Menu After Clicking a Link
+
 navLinks.forEach(function(link){
 
     link.addEventListener("click", function(){
